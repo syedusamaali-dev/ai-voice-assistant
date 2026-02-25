@@ -12,14 +12,14 @@ export default function PersonaToggle({ onChange }) {
     <div className="flex gap-2 mb-4 justify-center">
       <button
         type="button"
-        className={`px-4 py-2 rounded ${persona === 'ERP' ? 'bg-primary text-white' : 'bg-gray-200 dark:bg-gray-700'}`}
+        className={`px-4 py-2 rounded transition-colors ${persona === 'ERP' ? 'bg-primary text-white' : 'bg-white/20 text-primary hover:bg-primary/10'}`}
         onClick={() => handleSelect('ERP')}
       >
         ERP
       </button>
       <button
         type="button"
-        className={`px-4 py-2 rounded ${persona === 'Banking' ? 'bg-primary text-white' : 'bg-gray-200 dark:bg-gray-700'}`}
+        className={`px-4 py-2 rounded transition-colors ${persona === 'Banking' ? 'bg-primary text-white' : 'bg-white/20 text-primary hover:bg-primary/10'}`}
         onClick={() => handleSelect('Banking')}
       >
         Banking

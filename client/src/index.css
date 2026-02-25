@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg;
+  }
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;

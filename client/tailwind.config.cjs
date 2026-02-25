@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#0ea5e9',
-        secondary: '#6366f1',
-        accent: '#ec4899',
+        primary: '#4285F4',
+        secondary: '#34A853',
+        accent: '#FABB05',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -15,5 +15,8 @@ module.exports = {
     },
   },
   plugins: [],
+  // Add custom utility for glassmorphism
+  // Usage: class="glass" to apply backdrop-blur and translucent background
+  // Note: will be compiled via @layer utilities in CSS (add later)
   darkMode: 'class',
 };
